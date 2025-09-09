@@ -1,12 +1,59 @@
-# React + Vite
+# Thinkboard Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for Thinkboard, a simple note-taking app built with React, Vite, Tailwind CSS, and DaisyUI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create, view, edit, and delete notes
+- Responsive UI with DaisyUI and Tailwind CSS
+- Rate limiting feedback
+- Toast notifications for actions
+- API integration with the backend
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- npm
+
+### Installation
+
+```sh
+cd frontend
+npm install
+```
+
+### Development
+
+```sh
+npm run dev
+```
+
+The app will be available at [http://localhost:5173](http://localhost:5173).
+
+### Build
+
+```sh
+npm run build
+```
+
+### Lint
+
+```sh
+npm run lint
+```
+
+## Project Structure
+
+- `src/components/` – Reusable UI components
+- `src/pages/` – Page components for routing
+- `src/lib/` – Utility and API helper files
+
+## Environment
+
+The frontend expects the backend API to be available at `http://localhost:5001/api` in development.
+
+## License
+
+MIT
